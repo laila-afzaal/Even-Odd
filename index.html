@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    body{
+      text-align: center;
+      font-size: 30px;
+    }
+    input{
+      font-size: 28px;
+    }
+    button{
+      font-size: 20px;
+    }
+    div{
+      display: flexbox;
+      flex-wrap: wrap;
+      background-color: paleturquoise;
+      max-width: max-content;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid palevioletred;
+    } 
+  </style>
+
+ <div>
+  <h1>Even or Odd</h1>
+
+  <form onsubmit="calculate(); return false;">
+
+    <label for="num">Enter a number:</label>
+    <input type="number" min="1" required id="num" placeholder="Enter a number to check if it's even/odd">
+
+    <button type="submit">Check</button>
+  </form>
+
+  <p id="result"></p>
+</div>
+
+  <script>
+    function calculate() {
+      let num = document.querySelector('#num').value;
+
+      num = Number(num)
+
+      result = num % 2;
+
+      let resultLine = 
+       `<mark> Result: <b> ${result} </mark> </b>
+       <br><br>
+       (if result shows zero it means your entered number was even, otherwise it was odd)`;
+
+      document.querySelector('#result').innerHTML = resultLine;
+    }
+  </script>
+</body>
+</html>
