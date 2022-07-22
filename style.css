@@ -1,0 +1,70 @@
+body{
+  text-align: center;
+  font-size: 30px;
+}
+input{
+  font-size: 28px;
+}
+button{
+  font-family: monospace;
+  padding: 10px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+div{
+  color: white;
+  background-color: #AE8CFA;
+  max-width: max-content;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid purple;
+} 
+mark{
+  text-align: center;
+  padding: 5px;
+  border-radius: 3px;
+  font-family: monospace; 
+}
+
+@media only screen and (max-width : 425px ) {
+  body{
+    font-size: 18px;
+  }
+  input{
+    font-size: 17px;
+    margin: 5px;
+  }
+  div{
+    background-color: darkcyan;
+    color: white;
+    font-family: monospace;
+    border: 1px solid lime;
+  }
+  mark{
+    padding: 5px;
+    border-radius: 3px;
+  }
+  h1{
+    font-size: 32px;
+  }
+   button{
+    font-family: monospace;
+    font-size: 18px;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+} 
+
+
+@media only screen and (width : 768px) {
+  div{
+    background-color: rgb(244, 149, 115);
+    border: 4px solid lightcoral;
+  } 
+  button{
+    font-family: monospace;
+    margin-top: 15px;
+    font-size: 30px;
+  }
+}
